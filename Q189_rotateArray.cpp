@@ -24,7 +24,7 @@ void rotate(vector<int>& nums, int k) {
         k = k % nums.size();    
         reverse(nums.begin(), nums.end()); // 7 6 || 5 4 3 2 1
         reverse(nums.begin(), nums.begin() + k); // from idx 0 to k -1 i.e 1--> 6 7 || 5 4 3 2 1 
-        reverse(nums.begin()+ k ,nums.end()); // from idx 2 to 7 --> 6 7 || 1 2 3 4 5
+        reverse(nums.begin()+ k ,nums.end()); // from idx k to size - 1 --> 6 7 || 1 2 3 4 5
     }
 int main(int argc, char const *argv[])
 {
